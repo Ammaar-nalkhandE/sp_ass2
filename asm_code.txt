@@ -1,8 +1,14 @@
-hello
-how are u
-
-i am fine
-
-
-3 line brk above and two         tabs before
-
+START 100
+MOV AReg, 5
+ADD BReg, AReg
+LOOP:
+SUB CReg, AReg
+JMP LOOP
+LIT1 DC 1
+LIT2 DC 2
+LTORG
+MOV DReg, LIT1
+MUL DReg, LIT2
+LTORG
+HALT
+END
